@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mistoni');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* NAVIGATION BAR CODE START */
+header{
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 3%;
+    height: 10vh;
+}
+
+#logo {
+    /* font */
+    margin-top: 5%;
+    font-size: 50px;
+    margin-left: 0px;
+    font-family: 'Mistoni', sans-serif;
+}
+
+#menu {
+    width: 260px;
+}
+
+.menu-buttons{
+    color: black;
+    margin: 4%;
+}
+
+.menu-buttons:hover{
+    color: #FAFFD8;
+}
+/* NAVIGATION BAR CODE END */
+
+/* FOOTER CODE START */
+footer {
+    height: 12vh;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 8px; */
+}
+
+.contact-logos {
+    width: 5vh;
+    margin: 20px;
+}
+/* FOOTER CODE END */
+
+
+
+
+
+
+main {
+    min-height: 90vh;
+    background: #001D3D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+main #static-txt {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+}
+
+main #dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+#dynamic-txts li {
+    list-style: none;
+    color: #ff8500;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 18s steps(6) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -540px; /* 90px * # of elements */
+    }
+}
+
+#dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+}
+
+#dynamic-txts li span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #001D3D;
+    border-left: 2px solid #ff8500;
+    animation: typing 3s steps(26) infinite;
+}
+
+@keyframes typing {
+    40%, 60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+
+
+
+#bio {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+}
+
+.me {
+    height: 10vh;
+}

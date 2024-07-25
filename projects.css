@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/mistoni');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* NAVIGATION BAR CODE START */
+header{
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 4%;
+    height: 10vh;
+}
+
+#logo {
+    /* font */
+    margin-top: 5%;
+    font-size: 50px;
+    margin-left: 0px;
+    font-family: 'Mistoni', sans-serif;
+}
+
+#menu {
+    width: 260px;
+}
+
+.menu-buttons{
+    color: black;
+    margin: 4%;
+}
+
+.menu-buttons:hover{
+    color: #FAFFD8;
+}
+/* NAVIGATION BAR CODE END */
+
+/* FOOTER CODE START */
+footer {
+    height: 12vh;
+    background-color: darkslategray;
+    display: flex;
+    flex-direction: row;
+    color: wheat;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 8px; */
+}
+
+.contact-logos {
+    width: 5vh;
+    margin: 20px;
+}
+/* FOOTER CODE END */
+
+main {
+    min-height: 90vh;
+}
