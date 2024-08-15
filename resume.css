@@ -60,6 +60,120 @@ footer {
 }
 /* FOOTER CODE END */
 
+
+
+
+
 main {
     min-height: 90vh;
+    background-color: #09101c;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
 }
+
+
+
+
+
+#page-title {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 4vw;
+}
+
+#page-descr {
+    color: #a7b5ad;
+    font-size: 20px;
+}
+
+
+#projects {
+    padding: 4vw;
+    padding-top: 0;
+}
+
+
+
+
+article {
+    background-color: #13213b;
+    margin: 6vw;
+    padding: 2vw;
+    border-radius: 25px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.job-title {
+    color: white;
+    font-size: 40px;
+}
+
+.job-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.job-logos {
+    width: 4vh;
+    margin: 20px;
+    margin-right: 0px;
+}
+
+.job-image {
+    max-width: 240px;
+    max-height: 240px;
+    object-fit: cover;
+    border-radius: 5%;
+    display: flex;
+    justify-content: right;
+}
+
+.date {
+    color: #a7b5ad;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #a7b5ad;
+    font-size: 15px;
+}
+
+.descr {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.caption {
+    color: #a7b5ad;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#slideshow {
+    align-items: flex-end;
+    margin-right: 20px;
+}
+
+#slide-container {
+    align-items: center;
+}
+
+.drawing {
+    width: 200px;
+    border-radius: 10%;
+}
+
+/* .tag {
+
+} */

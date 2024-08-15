@@ -9,7 +9,7 @@
 <body>
     <!-- Navigation Bar Code -->
     <header>
-        <a class = "menu-buttons" id="logo" style="text-decoration:none"href="home.html">eh</a>
+        <a class = "menu-buttons" id="logo" style="text-decoration:none"href="index.html">eh</a>
         <section id = "menu">
             <a class = "menu-buttons" style="text-decoration:none"href="projects.html">projects</a>
             <a class = "menu-buttons" style="text-decoration:none"href="resume.html">experience</a>
@@ -17,16 +17,112 @@
         </section>
     </header>
     <!-- Navigation Bar Code -->
-    
+
     <main>
-        <p>projects!!</p>
+        <p id = "page-title">experience</p>
+        <p id = "page-descr">my time spent collecting xp</p>
+
+
+        <section id = "projects">
+
+            <article>
+                <div class = "job-title-container">
+                    <p class = "job-title">Happel Tutors</p>
+                    <a class = "github-link" href="https://github.com/ellahap/blackjack-web-game"><img class = "job-logos" src="images/logos/github-logo.png"></a>
+                </div>
+                <div class="container">
+                    <p class = "date">May 2024 - Aug 2024</p>
+                    <p class = "location">La Grange, IL</p>
+                </div>
+                
+                <div class="container">
+                    <p class = "descr">
+                        ● Independently tutored middle and high school students in Java, teaching introductory concepts such as variables, conditionals, 
+                            control structures, and arrays<br><br>
+                        ● Created curriculum, activities, and materials based on my high school and college classes and my own personal projects
+                    </p>
+                    <div class="image-caption-container">
+                        <img class = "job-image" src="images/experience/tutor-java-program.png">
+                        <p class = "caption">⬆ One of the starter programs I had them complete!</p>
+                    </div>
+                </div>
+                
+            </article>
+
+            <article>
+                <p class = "job-title">eBryIT</p>
+                <div class="container">
+                    <p class = "date">May 2024 - Aug 2024</p>
+                    <p class = "location">Wood Dale, IL</p>
+                </div>
+                <div class="container">
+                    <p class = "descr">
+                        ● Repaired 80+ Chromebooks, replacing LCD screens, keyboards, cameras, trackpads, and other essential parts
+                        <br><br>
+                        ● Enrolled 1000+ Chromebooks into their school administration, shipping them off ready-to-use for students
+                        <br><br>
+                        ● Gained a deeper understanding of computer hardware and its interaction with software systems
+                        <br><br>
+                    </p>
+                    <img class = "job-image" src="images/experience/ebryit-breakfix.jpg">
+                </div>
+                <div id="slide-container" class="container">
+                    <div id = "slideshow">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-1.jpg">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-2.jpg">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-3.jpg">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-4.jpg">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-5.jpg">
+                        <img class="drawing" src="images/experience/ebryit-drawing/ebryit-drawing-6.jpg">
+                  </div>
+                  <p class = "descr">
+                    After fixing each computer, we tested for any issues that needed repair.  One test for the touchscreen was
+                        drawing on a website.  Here's some fun photos I took one day of my quick drawings.  Each one represents a now-healthy 
+                            Chromebook!
+                    </p>
+                </div>
+                
+              
+            </article>
+
+            <article>
+                <p class = "job-title">Grayhill</p>
+                <div class="container">
+                    <p class = "date">May 2022 - Aug 2022</p>
+                    <p class = "location">La Grange, IL</p>
+                </div>
+                <p class = "descr">
+                    ● Implemented a conversion of computers from Novell systems to Active Directory and problem-solved computer issues
+                    <br><br>
+                    ● Trained employees on software updates including the Active Directory log-in system in a clear and understandable manner
+                </p>
+            </article>
+        </section>
+
     </main>
+
     
 </body>
-
 <footer>
-    <a href="https://www.linkedin.com/in/ella-happel-94811b202/"><img class = "contact-logos" src = "linkedin-logo.webp"></a>
-    <a href="https://github.com/ellahap"><img class = "contact-logos" src = "github-logo.png"></a>
+    <a href="https://www.linkedin.com/in/ella-happel-94811b202/"><img class = "contact-logos" src = "images/logos/linkedin-logo.webp"></a>
+    <a href="https://github.com/ellahap"><img class = "contact-logos" src = "images/logos/github-logo.png"></a>
     <!-- <img class = "contact-logos" src = "github-logo.png"> -->
 </footer>
+
+<script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+    var i;
+    var x = document.getElementsByClassName("drawing");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+    }
+</script>
 </html>

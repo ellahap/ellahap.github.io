@@ -12,7 +12,7 @@
 
     <!-- Navigation Bar Code -->
     <header>
-        <a class = "menu-buttons" id="logo" style="text-decoration:none"href="home.html">eh</a>
+        <a class = "menu-buttons" id="logo" style="text-decoration:none"href="index.html">eh</a>
         <section id = "menu">
             <a class = "menu-buttons" style="text-decoration:none"href="projects.html">projects</a>
             <a class = "menu-buttons" style="text-decoration:none"href="resume.html">experience</a>
@@ -22,16 +22,117 @@
     <!-- Navigation Bar Code -->
 
 
-
-
     <main>
-        <p>projects!!</p>
-    </main>
-</body>
+        <p id = "page-title">projects</p>
+        <p id = "page-descr">here are all the projects i've worked on, finished or not!</p>
 
+
+        <section id = "projects">
+
+            <article>
+                <p class = "project-title">Current Focus:</p>
+                <p class = "date">Now</p>
+                <p class = "descr">As summer ends, I have a few projects and learning goals to complete (or get as close to completion as possible!)<br><br>
+                    1. Hammock Finder Website (see below)<br>
+                    2. Lectures from my <a href="https://missing.csail.mit.edu/">"missing semester of CS education"</a> on the shell, data wrangling, git, debugging, and more<br>
+                    3. Self-teaching Javascript via the <a href="https://www.youtube.com/watch?v=EerdGm-ehJQ&t=27372s">free online JS course</a> I've been following<br>
+                    4. Practicing leetcode and essential data structures needed for classes and jobs
+                </p>
+            </article>
+
+            <article>
+                <p class = "project-title">Hammock Finder Website</p>
+                <p class = "date">Summer 2024</p>
+                <p class = "descr">I am currently working on this site, based on an idea I got from a 
+                    <a href="https://www.reddit.com/r/UIUC/comments/on0yjn/map_for_collective_hammock_spots_on_campus/">reddit post</a>.  
+                        My primary motivation for finishing the site is actually reply to the thread with the finished site, and hopefully have some people try it out!  
+                            I originally found that reddit post because I was looking for hammock spots on campus, and so I would definitely be one to use the finder myself.<br><br>
+                                My current gameplan is to source tree location data from the 
+                                    <a href="https://illinoisedu.treekeepersoftware.com/index.cfm?deviceWidth=1512">UIUC tree database</a>, filtering for trees that have a 
+                                        DBH (diameter at breast height) >6 inches, and filtering out stunmps.  Then, using JS find and save the coordinates of the trees that 
+                                            are 10-20 feet apart, and load the coordinates into the map.  Finally, display the map coordinates, with directions to get there.  As an
+                                                extension to add more features, I'd look into automatically updating the website with data every few days, adding backend to
+                                                    allow users to rate, review, add, tag, and favorite hammock spots, and factor in sun angles to determine if spots are 
+                                                        shady or not.  Definitely a work in progress that can go many different directions.
+                                        </p>
+            </article>
+
+            <article>
+                <div class = "project-title-container">
+                    <p class = "project-title">Blackjack Web Game</p>
+                    <a class = "github-link" href="https://github.com/ellahap/blackjack-web-game"><img class = "project-logos" src="images/logos/github-logo.png"></a>
+                    <a class = "project-link" href="https://ellahap.github.io/blackjack-web-game/"><img class = "project-logos" src="images/logos/link-logo.png"></a>
+                </div>
+
+                <p class = "date">Summer 2024</p>
+                <p class = "descr">lorem ipsum</p>
+            </article>
+
+            <article>
+                <p class = "project-title">DialStyle App</p>
+                <p class = "date">Spring 2024</p>
+                <div class="descr-container">
+                    <p class = "descr">
+                        lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum 
+                    </p>
+                    <div class="image-caption-container">
+                        <video max-width="200px" 
+                        height="250px" 
+                        controls="controls">
+                        <source src= "images/projects/dial-style-video.mp4" 
+                        type="video/mp4"/></video>
+                        <p class = "caption">⬆ Walk-through of the contacts view of the app prototype</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <p class = "project-title">SAS-E Mirror</p>
+                <p class = "date">Fall 2023</p>
+                <div class="descr-container">
+                    <p class = "descr">lorem ipsum</p>
+                    <img class = "project-image" src="images/projects/sase-mirror.JPG">
+                </div>
+            </article>
+    
+            <article>
+                <div class = "project-title-container">
+                    <p class = "project-title">Hestia Informational Site</p>
+                    <a class = "github-link" href="https://github.com/ellahap/hestia-website"><img class = "project-logos" src="images/logos/github-logo.png"></a>
+                    <a class = "project-link" href="https://ellahap.github.io/hestia-website/"><img class = "project-logos" src="images/logos/link-logo.png"></a>
+                </div>
+                <p class = "date">Summer 2023</p>
+                <p class = "descr">lorem ipsum</p>
+            </article>
+
+            <article>
+                <p class = "project-title">Arduino Automatic Cello Tuner</p>
+                <p class = "date">2019</p>
+                <div class="descr-container">
+                    <p class = "descr">I made this project in 8th grade, but I think it's a cool first computer project!
+                        It's an automatic cello tuner, which hijacked an electronic tuner's LED output power, rewiring it
+                            to inform my arduino.  The electronic tuner would light up one LED if the note was sharp, and
+                                the other if it was flat, so by rewiring the current my program knew which way to turn the
+                                    cello pegs.  These pegs were connected to a gear system I made out of LEGOs, powered by
+                                        a LEGO motor.  The program was written in ardiuno's unique language in their IDE, and
+                                            was one of the first programs I ever wrote!  The final product is a cello that tunes
+                                                itelf as you play a note.
+                    </p>
+                    <img class = "project-image" src="images/projects/cello-tuner.png">
+                </div>
+                
+            </article>
+        </section>
+
+    </main>
+
+    
+</body>
 <footer>
-    <a href="https://www.linkedin.com/in/ella-happel-94811b202/"><img class = "contact-logos" src = "linkedin-logo.webp"></a>
-    <a href="https://github.com/ellahap"><img class = "contact-logos" src = "github-logo.png"></a>
+    <a href="https://www.linkedin.com/in/ella-happel-94811b202/"><img class = "contact-logos" src = "images/logos/linkedin-logo.webp"></a>
+    <a href="https://github.com/ellahap"><img class = "contact-logos" src = "images/logos/github-logo.png"></a>
     <!-- <img class = "contact-logos" src = "github-logo.png"> -->
 </footer>
+
+>>>>>>> f6446ce (Added layout and began content for projects and experience pages)
 </html>

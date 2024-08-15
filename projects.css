@@ -8,9 +8,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-
-
-
 /* NAVIGATION BAR CODE START */
 header{
     background-color: wheat;
@@ -61,6 +58,105 @@ footer {
 }
 /* FOOTER CODE END */
 
+
+
+
 main {
     min-height: 90vh;
+    background-color: #0c1414;
+    display: flex;
+    flex-direction: column;
+    padding: 4vw;
 }
+
+
+
+
+
+#page-title {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 4vw;
+}
+
+#page-descr {
+    color: #a7b5ad;
+    font-size: 20px;
+}
+
+
+#projects {
+    padding: 4vw;
+    padding-top: 0;
+}
+
+
+
+
+article {
+    background-color: #172526;
+    margin: 6vw;
+    padding: 2vw;
+    border-radius: 25px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.project-title {
+    color: white;
+    font-size: 40px;
+}
+
+.project-title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.project-logos {
+    width: 4vh;
+    margin: 20px;
+    margin-right: 0px;
+}
+
+.project-image {
+    max-height: 250px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: right;
+}
+
+.caption {
+    color: #a7b5ad;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.image-caption-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.date {
+    color: #a7b5ad;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.descr {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+}
+
+.descr-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* .tag {
+
+} */
