@@ -146,7 +146,7 @@ article {
 }
 
 .descr {
-    color: white;
+    color: lightgray;
     font-size: 20px;
     margin: 20px;
 }
@@ -155,6 +155,7 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-content: center;
 }
 
 /* .tag {
